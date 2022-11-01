@@ -25,11 +25,12 @@ class MyApp extends StatelessWidget {
           title: Text('Grid View'),
         ),
         body: GridView(
+          padding: EdgeInsets.all(10),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
-            crossAxisSpacing: 20.00,
-            mainAxisSpacing: 20.00,
-            childAspectRatio: 2 / 4,
+            crossAxisSpacing: 10.00,
+            mainAxisSpacing: 10.00,
+            childAspectRatio: 4 / 4,
           ),
           children: myList,
         ),
